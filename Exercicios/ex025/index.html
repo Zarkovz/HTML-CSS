@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #ff0000;
+            font-weight: 700;
+            text-decoration: none;            
+        }
+
+        a:visited {
+            color: aqua;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        .especial {
+            background-color: black;
+        }
+
+        .especial::before {
+            content: '✹';
+        }
+
+        .especial::after {
+            content: '✹';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=oiV4HSukjmU" target="_blank" rel="external">Música tesuda</a></li>
+        <li><a href="https://www.youtube.com/watch?v=EYJATmk0Se4&list=RDEYJATmk0Se4&start_radio=1" target="_blank" rel="external">Música calma</a></li>
+        <li><a href="https://www.youtube.com/watch?v=hjlNzuB-cNQ"class="especial" target="_blank" rel="external">Eu sou do rock</a></li>
+    </ul>
+    <h1>Lembretes-seletores personalizados</h1>
+    <p># = id<br> . = class <br> :: = pseudo-element <br> > = pra dizer que um element é filho de outro. exemplo: div > p. podendo ser usado por exemplo para esconder alguma tag </p>
+</body>
+</html>
