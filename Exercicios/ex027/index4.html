@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhanmento vertical</title>
     <style>
+        * {
+            margin: 0px;
+        }
         #conteiner {
-            background: purple url(images/target001.png);
+            background: blueviolet url('images/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 100vh;
+            padding: 10px;
+            
         }
 
         #conteudo {
+            background: crimson url('images/target001.png');
+            background-size: 100% 100%;
 
+            position: absolute;
+            width: 400px;
+            height: 200px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <main>
         <section id="conteiner">
-            <aside id="conteudo">
+            <article id="conteudo">
 
-            </aside>
+            </article>
         </section>
-    </main>
 </body>
 </html>
