@@ -54,7 +54,15 @@ section {
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.505);
     color: white;
-    width: 400px;
+    width: 250px;
+}
+
+#q1 {
+    background: url('imagens/background001.jpg') right center/cover no-repeat fixed;
+}
+
+#q2 {
+    background: url('imagens/background002.jpg') right center/cover no-repeat fixed;
 }
 
 footer {
