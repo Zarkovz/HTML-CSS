@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        .cnome {
+            background-color: brown;
+        }
+
+        .cgroup {
+            background-color: rgb(225, 222, 222);
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 6px;
+        }
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudando a cor da coluna inteira</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgroup" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Claudio</td>
+                <td class="align">M</td>
+                <td class="align">30</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Osvaldo</td>
+                <td class="align">M</td>
+                <td class="align">24</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Adolfo</td>
+                <td class="align">M</td>
+                <td class="align">45</td>
+                <td>Artista</td>
+            </tr>
+            <tr>
+                <td>Hestia</td>
+                <td class="align">F</td>
+                <td class="align">18</td>
+                <td>Prostituta</td>
+            </tr>
+            <tr>
+                <td>Aylla</td>
+                <td class="align">F</td>
+                <td class="align">25</td>
+                <td>Engenheira</td>
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td class="align">F</td>
+                <td class="align">45</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
