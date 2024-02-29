@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: gray;
+        }
+
+        .cproduto {
+            background-color: gray;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 6px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum excepturi delectus corporis doloribus ipsam quia modi! Officia vero perspiciatis dicta eius ut doloribus nemo tenetur obcaecati! Ex, repellendus cum.</p>
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cproduto">
+            </colgroup>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <th scope="col">Produtos</th>
+                <th scope="col">Jan</th>
+                <th scope="col">Fer</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Abr</th>
+                <th scope="col">Mai</th>
+                <th scope="col">Jun</th>
+                <th scope="col">Jul</th>
+                <th scope="col">Ago</th>
+                <th scope="col">Set</th>
+                <th scope="col">Out</th>
+                <th scope="col">Nov</th>
+                <th scope="col">Dez</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Galaxy S24</td>
+                    <td>35</td>
+                    <td>58</td>
+                    <td>36</td>
+                    <td>37</td>
+                    <td>336</td>
+                    <td>377</td>
+                    <td>436</td>
+                    <td>336</td>
+                    <td>6.363</td>
+                    <td>363</td>
+                    <td>33.636</td>
+                    <td>3.636</td>
+                </tr>
+                <tr>
+                    <td style="background-color: gray;">Xbox Series X</td>
+                    <td>2.355</td>
+                    <td>25.366</td>
+                    <td>36.363</td>
+                    <td>366</td>
+                    <td>6.766</td>
+                    <td>3.636</td>
+                    <td>6.636</td>
+                    <td>63.733</td>
+                    <td>2.352</td>
+                    <td>3.232</td>
+                    <td>35.325</td>
+                    <td>2.525</td>
+                </tr>
+                <tr>
+                    <td>Playstation 5</td>
+                    <td>5.324</td>
+                    <td>2.424</td>
+                    <td>2.352</td>
+                    <td>2.522</td>
+                    <td>5.225</td>
+                    <td>2.555</td>
+                    <td>35.252</td>
+                    <td>255</td>
+                    <td>552</td>
+                    <td>525</td>
+                    <td>235.253</td>
+                    <td>25.552</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
